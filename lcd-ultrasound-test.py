@@ -2,6 +2,9 @@ from time import sleep
 from Adafruit_CharLCD import Adafruit_CharLCD
 import RPi.GPIO as GPIO
 import time
+from networktables import NetworkTables
+
+NetworkTables.initialize(server='10.56.87.2')
 
 # Instantiate gpio pins
 GPIO.setmode(GPIO.BCM)
